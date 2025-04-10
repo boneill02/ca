@@ -1,4 +1,4 @@
-import Rainbow from "./rainbowvis.js";
+/* import Rainbow from "./rainbowvis.js"; */
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -15,18 +15,19 @@ var paused = true;
 
 var grid = new Array(rows).fill(null).map(() => new Array(cols).fill(0));
 
-var rainbow = new Rainbow();
-rainbow.maxNum = stateCount;
+/* var rainbow = new Rainbow();
+rainbow.maxNum = stateCount; */
 
 function draw() {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	ctx.fillStyle = "#ffffff";
+	ctx.fillStyle = "#000";
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 	for (var i = 0; i < rows; i++) {
 		for (var j = 0; j < cols; j++) {
 			if (grid[i][j] > 0) {
-				ctx.fillStyle = "#" + rainbow.colourAt(grid[i][j]);
+				/* ctx.fillStyle = "#" + rainbow.colourAt(grid[i][j]); */
+				ctx.fillStyle = "#fff";
 				ctx.fillRect(j * cellSize, i * cellSize, cellSize, cellSize);
 			}
 		}
