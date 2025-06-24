@@ -1,3 +1,13 @@
+/*
+ * @file ca.js
+ * @brief Cellular automata simulator
+ * @author Ben O'Neill <ben@oneill.sh>
+ * 
+ * @copyright Copyright (c) 2022-2025 Ben O'Neill <ben@oneill.sh>.
+ * This work is released under the terms of the MIT License. See
+ * LICENSE.
+ */
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
