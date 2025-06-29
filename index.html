@@ -12,18 +12,20 @@
 	<div class="wrapper subindex">
 		<h2 class="section-header">Cellular Automata Simulator</h2>
 		<p>This is a 2D "Larger Than Life" cellular automata simulator using the Moore neighborhood type without the middle cell rule.</p>
+        <p>Click on the canvas to toggle cells.</p>
 		<p>Enter rules below. Birth and survival should be comma separated.</p>
 		<div class="canvas-form"></div>
 			<canvas class="canvas-form-canvas" id="canvas" width=500 height=500></canvas>
-			<label for="birth">Birth:</label><br>
+            <br>
+			<label for="birth">Birth:</label>
 			<input type="text" id="birth" name="birth" value="3"><br><br>
-			<label for="survival">Survival:</label><br>
+			<label for="survival">Survival:</label>
 			<input type="text" id="survival" name="survival" value="2,3"><br><br>
-			<label for="neighborhood">Neighborhood:</label><br>
+			<label for="neighborhood">Neighborhood:</label>
 			<input type="text" id="neighborhood" name="neighborhood" value="1"><br><br>
-			<label for="stateCount">Number of states (maximum age +1):</label><br>
+			<label for="stateCount">Number of states:</label>
 			<input type="text" id="stateCount" name="stateCount" value="2"><br><br>
-			<label for="updateInterval">Generation Interval (ms):</label><br>
+			<label for="updateInterval">Generation Interval (ms):</label>
 			<input type="text" id="updateInterval" name="updateInterval" value="500"><br><br>
 			<button onclick="simulate()">Toggle simulation</button>
 			<button onclick="step()">Step</button>
